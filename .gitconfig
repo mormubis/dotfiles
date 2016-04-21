@@ -1,0 +1,19 @@
+[alias]
+	ls = log --pretty=format:"%C(yellow)%h%Cred%d\\ %Creset%s%Cblue\\ [%cn]" --decorate
+ 	ll = log --pretty=format:"%C(yellow)%h%Cred%d\\ %Creset%s%Cblue\\ [%cn]" --decorate --numstat
+ 	fl = log -u
+	dl = "!git ll -1"
+	dlc = diff --cached HEAD^
+[core]
+    excludesfile = ~/.gitignore
+[github]
+    user = adelarosab
+[push]
+	default = simple
+[remote "origin"]
+	prune = true
+[user]
+	name = Adrián de la Rosa
+	email = Adrian.delaRosa@lbigroup.es
+[url "https://"]
+	insteadOf = git://
