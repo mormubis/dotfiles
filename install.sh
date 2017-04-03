@@ -1,6 +1,7 @@
 #/bin/bash
 # config files
 curl "https://raw.githubusercontent.com/adelarosab/dotfiles/master/.bash_profile" -o ~/.bash_profile
+curl "https://raw.githubusercontent.com/adelarosab/dotfiles/master/.eslint.json" -o ~/.eslint.json
 curl "https://raw.githubusercontent.com/adelarosab/dotfiles/master/.gitconfig" -o ~/.gitconfig
 curl "https://raw.githubusercontent.com/adelarosab/dotfiles/master/.gitignore" -o ~/.gitignore
 
