@@ -1,19 +1,19 @@
 [alias]
-	ls = log --pretty=format:"%C(yellow)%h%Cred%d\\ %Creset%s%Cblue\\ [%cn]" --decorate
- 	ll = log --pretty=format:"%C(yellow)%h%Cred%d\\ %Creset%s%Cblue\\ [%cn]" --decorate --numstat
- 	fl = log -u
-	dl = "!git ll -1"
-	dlc = diff --cached HEAD^
+  ls = log --pretty=format:"%C(yellow)%h%Cred%d\\ %Creset%s%Cblue\\ [%cn]" --decorate
+  ll = log --pretty=format:"%C(yellow)%h%Cred%d\\ %Creset%s%Cblue\\ [%cn]" --decorate --numstat
+  fl = log -u
+  dl = "!git ll -1"
+  dlc = diff --cached HEAD^
 [core]
-    excludesfile = ~/.gitignore
+  excludesfile = ~/.gitignore
 [github]
-    user = adelarosab
+  user = adelarosab
 [push]
-	default = simple
+  default = simple
 [remote "origin"]
-	prune = true
+  prune = true
 [user]
-	name = Adrian de la Rosa
-	email = adrian@delarosab.me
+  name = Adrian de la Rosa
+  email = adrian@delarosab.me
 [url "https://"]
-	insteadOf = git://
+  insteadOf = git://
