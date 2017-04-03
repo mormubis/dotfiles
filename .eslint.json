@@ -1,0 +1,6 @@
+{
+  "extends": "defaults/configurations/google",
+  "parserOptions": { 
+    "sourceType": "module"
+  }
+}
