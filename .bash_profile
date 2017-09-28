@@ -1,6 +1,7 @@
 ## alias
 # default
 alias cd..='cd ..'
+alias git='hub'
 alias ll='ls -Galh'
 alias server='http-server -p 8000 1>/dev/null'
 alias workspace='cd ~/workspace'
