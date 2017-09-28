@@ -11,14 +11,20 @@ curl "https://raw.githubusercontent.com/adelarosab/dotfiles/master/.gitignore" -
 # node
 ! which node && brew install node
 
+# hub
+! which hub && brew cask install hub
+
 # java
 ! which java && brew cask install java
+
+#webstorm
+! which telegram && brew cask install telegram
 
 #webstorm
 ! which webstorm && brew cask install webstorm
 
 # node dependencies
-npm i -g eslint eslint-config-defaults http-server npm-check-updates
+npm i -g eslint eslint-config-defaults http-server prettier npm-check-updates
 
 # completion files
 curl "https://raw.githubusercontent.com/git/git/master/contrib/completion/git-completion.bash" -o ~/.git-completion.bash
