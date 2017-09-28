@@ -8,19 +8,25 @@ curl "https://raw.githubusercontent.com/adelarosab/dotfiles/master/.gitignore" -
 # brew
 ! which brew && /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 
-# node
-! which node && brew install node
+# git
+! brew install git
 
 # hub
-! which hub && brew cask install hub
+! which hub && brew install hub
+
+# node
+! which node && brew install node
 
 # java
 ! which java && brew cask install java
 
-#webstorm
+# slack
+! which slack && brew cask install slack
+
+# telegram
 ! which telegram && brew cask install telegram
 
-#webstorm
+# webstorm
 ! which webstorm && brew cask install webstorm
 
 # node dependencies
