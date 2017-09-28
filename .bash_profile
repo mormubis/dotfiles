@@ -33,11 +33,14 @@ ssh-add -AK ~/.ssh/github &>/dev/null
 function branch () {
   git symbolic-ref --short HEAD &>/dev/null && echo '('`git symbolic-ref --short HEAD`')'
 }
+
 # current working directory
 function dir () {
   p=${PWD/$HOME/\~}
   p=${p/*workspace/+}
   echo $p
 }
+
 # prompt
-PS1="\e[0;31m\u\e[m at \e[0;33m\h\e[m in \e[0;32m\$(dir)\$(branch)\e[m\n > "
+PS1="\e[0;31m\u\e[m at \e[0;33m\h\e[m in \e[0;32m\$(dir)\$(branch)\e[m\n $ "
+SUDO_PS1="\e[0;31m\u\e[m at \e[0;33m\h\e[m in \e[0;32m\$(dir)\$(branch)\e[m\n # "
