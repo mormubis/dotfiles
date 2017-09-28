@@ -9,7 +9,7 @@ curl "https://raw.githubusercontent.com/adelarosab/dotfiles/master/.gitignore" -
 ! which brew && /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 
 # git
-! brew install git
+! brew install git git-lfs
 
 # hub
 ! which hub && brew install hub
