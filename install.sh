@@ -8,10 +8,10 @@ curl "https://raw.githubusercontent.com/adelarosab/dotfiles/master/.gitignore" -
 ! which brew && /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 
 # docker
-! brew install docker docker-compose docker-machine
+! which docker && brew install docker docker-compose docker-machine
 
 # git
-! brew install git git-lfs
+! which git && brew install git git-lfs
 
 # hub
 ! which hub && brew install hub
