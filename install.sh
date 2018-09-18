@@ -38,7 +38,7 @@ curl "https://raw.githubusercontent.com/adelarosab/dotfiles/master/.gitignore" -
 ! which webstorm && brew cask install webstorm
 
 # node dependencies
-npm i -g depcheck http-server prettier npm-check-updates
+npm i -g depcheck http-server npm-check-updates prettier
 
 # completion files
 curl "https://raw.githubusercontent.com/git/git/master/contrib/completion/git-completion.bash" -o ~/.git-completion.bash
