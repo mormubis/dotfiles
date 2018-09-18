@@ -20,7 +20,7 @@ curl "https://raw.githubusercontent.com/adelarosab/dotfiles/master/.gitignore" -
 ! which node && brew install node
 
 # chrome
-! which java && brew cask install google-chrome homebrew/cask-versions/google-chrome-canary
+! which google-chrome && brew cask install google-chrome homebrew/cask-versions/google-chrome-canary
 
 # java
 ! which java && brew cask install java
