@@ -32,7 +32,6 @@ fi
 
 ## ssh-keys
 ssh-add -AK ~/.ssh/github &>/dev/null
-ssh-add -AK ~/.ssh/bitbucket &>/dev/null
 
 ## prompt
 # git branch
