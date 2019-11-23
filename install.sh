@@ -7,9 +7,6 @@ curl "https://raw.githubusercontent.com/adelarosab/dotfiles/master/.gitignore" -
 # brew
 ! which brew && /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 
-# docker
-! which docker && brew install docker docker-compose docker-machine
-
 # git
 ! which git && brew install git git-lfs
 
@@ -19,17 +16,14 @@ curl "https://raw.githubusercontent.com/adelarosab/dotfiles/master/.gitignore" -
 # node
 ! which node && brew install node
 
+# docker
+! which docker && brew cask install docker
+
 # chrome
-! which google-chrome && brew cask install google-chrome homebrew/cask-versions/google-chrome-canary
+! which google-chrome && brew cask install google-chrome
 
 # java
 ! which java && brew cask install java
-
-# ngrock
-! which java && brew cask install ngrok
-
-# slack
-! which slack && brew cask install slack
 
 # telegram
 ! which telegram && brew cask install telegram
@@ -38,7 +32,7 @@ curl "https://raw.githubusercontent.com/adelarosab/dotfiles/master/.gitignore" -
 ! which webstorm && brew cask install webstorm
 
 # node dependencies
-npm i -g depcheck http-server npm-check-updates prettier
+npm i -g depcheck eslint gitmoji-cli http-server nodemon npm-check npm-check-updates prettier
 
 # completion files
 curl "https://raw.githubusercontent.com/git/git/master/contrib/completion/git-completion.bash" -o ~/.git-completion.bash
