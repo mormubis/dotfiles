@@ -1,16 +1,30 @@
 [alias]
+  # Amend the currently staged files to the latest commit
+  amend = commit --amend --reuse-message=HEAD
+  # Credit an author on the latest commit
+  credit = "!f() { git commit --amend --author \"$1 <$2>\" -C HEAD; }; f"
+  # View abbreviated SHA, description of the latest commit
   dl = "!git ll -1"
+  # Show the diff between the latest commit and the current state
   dlc = diff --cached HEAD^
+  # Don't have clue
   fl = log -u
+  # As it says...
   fuck = reset --hard HEAD
+  # View abbreviated SHA, description of the latest commits
   ll = log --pretty=format:"%C(yellow)%h%Cred%d\\ %Creset%s%Cblue\\ [%cn]" --decorate --numstat
+  # View abbreviated SHA, description of the latest commits
   ls = log --pretty=format:"%C(yellow)%h%Cred%d\\ %Creset%s%Cblue\\ [%cn]" --decorate
 [core]
   excludesfile = ~/.gitignore
 [github]
   user = adelarosab
+[help]
+  # Automatically correct and execute mistyped commands
+  autocorrect = 1
 [push]
   default = current
+  followTags = true
 [user]
   email = adrian@delarosab.me
   name = Adrian de la Rosa
