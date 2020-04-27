@@ -40,7 +40,7 @@ alias ll='ls -Galh'
 alias server='http-server -p 8000'
 
 # Measure terminal screen
-alias size='printf *%78s*\\n'
+alias size='printf "*%78s*\n"'
 
 # More usefull alias for git
 alias gb='git branch'
