@@ -60,6 +60,8 @@ curl "https://raw.githubusercontent.com/mormubis/dotfiles/master/.p10k.zsh" -o ~
 sed -i='' 's/^ZSH_THEME=.*$/ZSH_THEME="powerlevel10k\/powerlevel10k"/g' ~/.zshrc
 # zsh-autosuggestions
 git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions
+curl "https://raw.githubusercontent.com/mbadolato/iTerm2-Color-Schemes/master/schemes/MaterialDark.itermcolors" -o ~/Downloads/MaterialDark.itermcolors
+
 
 echo "configuring git"
 
