@@ -50,25 +50,20 @@ echo "customizing terminal"
 
 # install oh my zsh
 sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
+curl "https://raw.githubusercontent.com/mormubis/dotfiles/master/aliases.zsh" -o ~/.oh-my-zsh/custom/aliases.zsh
+sed -i='' 's/^plugins=.*$/plugins=(git nvm zsh-autosuggestions)g' ~/.zshrc
 # powerlevel10k
 git clone --depth=1 https://github.com/romkatv/powerlevel10k.git ${ZSH_CUSTOM:-$HOME/.oh-my-zsh/custom}/themes/powerlevel10k
+curl "https://raw.githubusercontent.com/mormubis/dotfiles/master/.p10k.zsh" -o ~/.p10k.zsh
 sed -i='' 's/^ZSH_THEME=.*$/ZSH_THEME="powerlevel10k/powerlevel10k"/g' ~/.zshrc
-sed -i='' 's/^plugins=.*$/plugins=(git nvm zsh-autosuggestions)g' ~/.zshrc
 # zsh-autosuggestions
 git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions
 
+echo "configuring git"
 
-echo "cloning dotfiles"
-
-# Retrieve config files
-curl "https://raw.githubusercontent.com/mormubis/dotfiles/master/.aliases" -o ~/.aliases
-curl "https://raw.githubusercontent.com/mormubis/dotfiles/master/.bash_profile" -o ~/.bash_profile
+# git
 curl "https://raw.githubusercontent.com/mormubis/dotfiles/master/.gitconfig" -o ~/.gitconfig
 curl "https://raw.githubusercontent.com/mormubis/dotfiles/master/.gitignore" -o ~/.gitignore
-curl "https://raw.githubusercontent.com/mormubis/dotfiles/master/.prompt" -o ~/.prompt
-
-echo "making system modifications:"
-curl https://raw.githubusercontent.com/mormubis/dotfiles/master/macos | bash
 
 echo "Generating an RSA token for GitHub"
 mkdir -p ~/.ssh
@@ -77,5 +72,10 @@ ssh-keygen -t rsa -b 4096 -C "adrian@delarosab.me"
 echo "Host *\n AddKeysToAgent yes\n UseKeychain yes\n IdentityFile ~/.ssh/github" | tee ~/.ssh/config
 eval "$(ssh-agent -s)"
 echo "run 'pbcopy < ~/.ssh/github.pub' and paste that into GitHub"
+
+# mac os
+
+echo "making system modifications:"
+curl https://raw.githubusercontent.com/mormubis/dotfiles/master/macos | bash
 
 echo "Done. Note that some of these changes require a logout/restart to take effect."
