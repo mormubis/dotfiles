@@ -29,6 +29,7 @@ echo "installing apps"
 # 1password
 # chrome
 # firefox
+# iterm2
 # java
 # skype
 # slack
