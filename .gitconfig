@@ -3,8 +3,6 @@
   amend = commit --amend --reuse-message=HEAD
   # Credit an author on the latest commit
   credit = "!f() { git commit --amend --author \"$1 <$2>\" -C HEAD; }; f"
-  # Using bat as diff tool
-  deff = "!f() { git diff --name-only --diff-filter=d $1 | xargs bat --diff; }; f"
   # View abbreviated SHA, description of the latest commit
   dl = "!git ll -1"
   # Show the diff between the latest commit and the current state
