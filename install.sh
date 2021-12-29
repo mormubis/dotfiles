@@ -46,6 +46,18 @@ brew install 1password firefox google-chrome iterm2 java skype slack spotify tel
 # npm-check-updates
 npm i -g depcheck http-server nodemon npm-check npm-check-updates
 
+echo "customizing terminal"
+
+# install oh my zsh
+sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
+# powerlevel10k
+git clone --depth=1 https://github.com/romkatv/powerlevel10k.git ${ZSH_CUSTOM:-$HOME/.oh-my-zsh/custom}/themes/powerlevel10k
+sed -i='' 's/^ZSH_THEME=.*$/ZSH_THEME="powerlevel10k/powerlevel10k"/g' ~/.zshrc
+sed -i='' 's/^plugins=.*$/plugins=(git nvm zsh-autosuggestions)g' ~/.zshrc
+# zsh-autosuggestions
+git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions
+
+
 echo "cloning dotfiles"
 
 # Retrieve config files
