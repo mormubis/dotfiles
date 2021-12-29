@@ -21,11 +21,18 @@
   excludesfile = ~/.gitignore
   pager = delta --plus-color="#558b2e" --plus-emph-color="#8bc249" --minus-color="#c62727" --minus-emph-color="#ef524f" --width=80
   editor = webstorm -w
+[filter "lfs"]
+  clean = git-lfs clean -- %f
+  smudge = git-lfs smudge -- %f
+  process = git-lfs filter-process
+  required = true
 [github]
   user = mormubis
 [help]
   # Automatically correct and execute mistyped commands
   autocorrect = 1
+[init]
+  defaultBranch = main
 [push]
   default = current
   followTags = true
@@ -36,10 +43,3 @@
   name = Adrian de la Rosa
 [url "https://"]
   insteadOf = git://
-[init]
-	defaultBranch = main
-[filter "lfs"]
-	clean = git-lfs clean -- %f
-	smudge = git-lfs smudge -- %f
-	process = git-lfs filter-process
-	required = true
