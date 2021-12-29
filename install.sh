@@ -22,7 +22,7 @@ brew install font-mononoki
 # hub
 # nvm
 # watchman
-brew install aerial bat gh git git-lfs nvm watchman
+brew install aerial bat gh git git-lfs nvm
 
 echo "installing apps"
 
