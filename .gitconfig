@@ -39,7 +39,7 @@
 [rerere]
   enabled = true
 [user]
-  email = adelarosabretin@coursera.org
+  email = adrian@delarosab.me
   name = Adrian de la Rosa
 [url "https://"]
   insteadOf = git://
