@@ -78,7 +78,7 @@ echo "run 'pbcopy < ~/.ssh/github.pub' and paste that into GitHub"
 # mac os
 
 echo "making system modifications:"
-curl https://raw.githubusercontent.com/mormubis/dotfiles/master/macos | bash
+curl https://raw.githubusercontent.com/mormubis/dotfiles/master/macos.sh | bash
 
 # webstorm 
 
