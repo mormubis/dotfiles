@@ -57,7 +57,7 @@ sed -i='' 's/^plugins=.*$/plugins=(git nvm zsh-autosuggestions)g' ~/.zshrc
 # powerlevel10k
 git clone --depth=1 https://github.com/romkatv/powerlevel10k.git ${ZSH_CUSTOM:-$HOME/.oh-my-zsh/custom}/themes/powerlevel10k
 curl "https://raw.githubusercontent.com/mormubis/dotfiles/master/.p10k.zsh" -o ~/.p10k.zsh
-sed -i='' 's/^ZSH_THEME=.*$/ZSH_THEME="powerlevel10k/powerlevel10k"/g' ~/.zshrc
+sed -i='' 's/^ZSH_THEME=.*$/ZSH_THEME="powerlevel10k\/powerlevel10k"/g' ~/.zshrc
 # zsh-autosuggestions
 git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions
 
