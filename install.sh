@@ -5,7 +5,7 @@ echo "Hello $(whoami)! Let's get you set up."
 echo "installing homebrew"
 
 # brew
-/usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 
 echo "brew installing stuff"
 # Install more recent versions of some macOS tools.
