@@ -39,6 +39,8 @@ echo "installing apps"
 brew install 1password firefox google-chrome iterm2 java skype slack spotify telegram webstorm
 
 # node dependencies
+nvm install node
+nvm alias default node
 # depcheck
 # http-server
 # nodemon
