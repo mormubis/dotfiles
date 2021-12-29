@@ -35,7 +35,7 @@ echo "installing apps"
 # spotify
 # telegram
 # webstorm
-brew install 1password firefox google-chrome java skype slack spotify telegram webstorm
+brew install 1password firefox google-chrome iterm2 java skype slack spotify telegram webstorm
 
 # node dependencies
 # depcheck
