@@ -15,19 +15,18 @@ brew install grep openssh
 brew tap homebrew/cask-fonts
 brew cask install font-mononoki
 
+# aerial
 # bat
-# bash completion
+# gh
 # git
 # hub
-# node
+# nvm
 # watchman
-brew install bash-completion bat git git-lfs  hub node watchman
+brew install aerial bat gh git git-lfs nvm watchman
 
-echo "installing apps with brew cask"
+echo "installing apps"
 
 # 1password
-# docker
-# dropbox
 # chrome
 # firefox
 # java
@@ -36,7 +35,7 @@ echo "installing apps with brew cask"
 # spotify
 # telegram
 # webstorm
-brew cask install 1password docker dropbox firefox google-chrome java skype slack spotify telegram webstorm
+brew install 1password firefox google-chrome java skype slack spotify telegram webstorm
 
 # node dependencies
 # depcheck
