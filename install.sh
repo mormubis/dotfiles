@@ -13,7 +13,7 @@ brew install grep openssh
 
 # Install font tools
 brew tap homebrew/cask-fonts
-brew cask install font-mononoki
+brew install font-mononoki
 
 # aerial
 # bat
