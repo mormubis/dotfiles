@@ -78,4 +78,9 @@ echo "run 'pbcopy < ~/.ssh/github.pub' and paste that into GitHub"
 echo "making system modifications:"
 curl https://raw.githubusercontent.com/mormubis/dotfiles/master/macos | bash
 
+# webstorm 
+
+echo "downloading webstorm settings"
+curl "https://raw.githubusercontent.com/mormubis/dotfiles/master/settings.zip" -o ~/Downloads/settings.zip
+
 echo "Done. Note that some of these changes require a logout/restart to take effect."
