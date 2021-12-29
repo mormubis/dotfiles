@@ -3,6 +3,8 @@
   amend = commit --amend --reuse-message=HEAD
   # Credit an author on the latest commit
   credit = "!f() { git commit --amend --author \"$1 <$2>\" -C HEAD; }; f"
+  # Using bat as diff tool
+  deff = "!f() { git diff --name-only --diff-filter=d $1 | xargs bat --diff; }; f"
   # View abbreviated SHA, description of the latest commit
   dl = "!git ll -1"
   # Show the diff between the latest commit and the current state
@@ -17,16 +19,27 @@
   ls = log --pretty=format:"%C(yellow)%h%Cred%d\\ %Creset%s%Cblue\\ [%cn]" --decorate
 [core]
   excludesfile = ~/.gitignore
+  pager = delta --plus-color="#558b2e" --plus-emph-color="#8bc249" --minus-color="#c62727" --minus-emph-color="#ef524f" --width=80
+  editor = webstorm -w
 [github]
-  user = adelarosab
+  user = mormubis
 [help]
   # Automatically correct and execute mistyped commands
   autocorrect = 1
 [push]
   default = current
   followTags = true
+[rerere]
+  enabled = true
 [user]
-  email = adrian@delarosab.me
+  email = adelarosabretin@coursera.org
   name = Adrian de la Rosa
 [url "https://"]
   insteadOf = git://
+[init]
+	defaultBranch = main
+[filter "lfs"]
+	clean = git-lfs clean -- %f
+	smudge = git-lfs smudge -- %f
+	process = git-lfs filter-process
+	required = true
