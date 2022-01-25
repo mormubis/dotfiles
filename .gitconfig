@@ -17,7 +17,7 @@
   ls = log --pretty=format:"%C(yellow)%h%Cred%d\\ %Creset%s%Cblue\\ [%cn]" --decorate
 [core]
   excludesfile = ~/.gitignore
-  pager = delta --plus-color="#558b2e" --plus-emph-color="#8bc249" --minus-color="#c62727" --minus-emph-color="#ef524f" --width=80
+  pager = delta --plus-style="syntax #558b2e" --plus-emph-style="syntax #8bc249" --minus-style="normal #c62727" --minus-emph-style="normal #ef524f" --width=80
   editor = webstorm -w
 [filter "lfs"]
   clean = git-lfs clean -- %f
